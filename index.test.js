@@ -3,6 +3,7 @@ const assert = require('assert');
 
 // Import the division function from the index.js file
 const division = require('./index.js').division;
+const mairoridade = require('./maioridade.js').maioridade;
 
 // Test cases for the division function
 describe('division', () => {
@@ -16,3 +17,14 @@ describe('division', () => {
         assert.throws(() => division(10, 0), Error);
     });
 });
+
+describe('maioridade', () => {
+    it('deve receber uma idade', () => {
+        assert.scrictEqual(Maioridade(20),true);
+    });
+
+    it('deve avisar menor de idade', () => {
+        assert.throws(() => Maioridade(15), Error);
+    });
+})
+
