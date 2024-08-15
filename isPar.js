@@ -2,7 +2,8 @@
 
 function isPar(a) {
     if (a%2 != 0) throw new Error("não é par");
-    return true;
+
+    return 1;
 }
 
 module.exports.isPar = isPar;
