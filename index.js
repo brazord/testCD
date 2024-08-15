@@ -1,10 +1,19 @@
 console.log("Hello, GitHub Actions");
 
-function division(a, b) {
-    if (b === 0) {
-        throw new Error("Divisão por zero não é permitida");
+//Alunos
+/*
+Avalone Cabrera
+Christian Martins
+Gustavo Gutierrez
+João Henrique de Oliveira
+João Victor Ferrari
+*/
+
+function DivisaoJoao(num, divisor){
+    if (divisor === 0) {
+        throw new Error("Divisão Não permitida");
     }
-    return a / b;
+    return num / divisor;
 }
 
-module.exports.division = division;
+module.exports.division = DivisaoJoao;
