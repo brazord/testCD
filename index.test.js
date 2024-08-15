@@ -19,10 +19,10 @@ describe('division', () => {
 });
 
 describe('isPar', () => {
-    it('deve retornar true'), () => {
+    it('deve retornar true', () => {
         assert.strictEqual(isPar(2), 1);
-    };
+    });
     it('deve retornar erro', () => {
         assert.throws(() => isPar(5), Error);
-    })
+    });
 });
