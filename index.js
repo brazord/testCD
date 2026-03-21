@@ -5,6 +5,7 @@ function division(a, b) {
        throw new Error("Divisão por zero não é permitida");
       console.log('minha nova implementação');
     }
+    a += 10;
     return a / b;
 }
 
